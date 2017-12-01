@@ -1,0 +1,25 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="trunk_firmware">
+    <xacro:macro name="trunk_firmware" >
+            <fw id="TrunkYaw">
+                <Node id="/pelvis/waist" />
+                <PublicProcURLExtension id="${TrunkYawPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${TrunkYawPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${TrunkYawPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${TrunkYawPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="TrunkLeft">
+                <Node id="/trunk/left_actuator" />
+                <PublicProcURLExtension id="${WaistLeftActuatorPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${WaistLeftActuatorPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${WaistLeftActuatorPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${WaistLeftActuatorPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="TrunkRight">
+                <Node id="/trunk/right_actuator" />
+                <PublicProcURLExtension id="${WaistRightActuatorPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${WaistRightActuatorPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${WaistRightActuatorPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${WaistRightActuatorPrivateFPGAFirmware}" />
+            </fw>
+    </xacro:macro>
+</robot>

@@ -1,0 +1,89 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="leg_firmware">
+
+    <xacro:macro name="leg_firmware" >
+            <fw id="LeftLegJ1">
+                <Node id="/pelvis/left_leg_j1" />
+                <PublicProcURLExtension id="${LeftHipYawPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${LeftHipYawPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${LeftHipYawPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${LeftHipYawPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="LeftLegJ2">
+                <Node id="/left_leg/j2" />
+                <PublicProcURLExtension id="${HipRollPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${HipRollPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${HipRollPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${HipRollPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="LeftLegJ3">
+                <Node id="/left_leg/j3" />
+                <PublicProcURLExtension id="${HipPitchPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${HipPitchPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${HipPitchPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${HipPitchPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="LeftLegJ4">
+                <Node id="/left_leg/j4" />
+                <PublicProcURLExtension id="${KneePitchPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${KneePitchPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${KneePitchPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${KneePitchPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="LeftLegJ5">
+                <Node id="/left_leg/ankle/right_actuator" />
+                <PublicProcURLExtension id="${AnkleRightActuatorPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${AnkleRightActuatorPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${AnkleRightActuatorPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${AnkleRightActuatorPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="LeftLegJ6">
+                <Node id="/left_leg/ankle/left_actuator" />
+                <PublicProcURLExtension id="${AnkleLeftActuatorPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${AnkleLeftActuatorPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${AnkleLeftActuatorPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${AnkleLeftActuatorPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="RightLegJ1">
+                <Node id="/pelvis/right_leg_j1" />
+                <PublicProcURLExtension id="${RightHipYawPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${RightHipYawPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${RightHipYawPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${RightHipYawPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="RightLegJ2">
+                <Node id="/right_leg/j2" />
+                <PublicProcURLExtension id="${HipRollPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${HipRollPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${HipRollPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${HipRollPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="RightLegJ3">
+                <Node id="/right_leg/j3" />
+                <PublicProcURLExtension id="${HipPitchPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${HipPitchPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${HipPitchPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${HipPitchPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="RightLegJ4">
+                <Node id="/right_leg/j4" />
+                <PublicProcURLExtension id="${KneePitchPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${KneePitchPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${KneePitchPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${KneePitchPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="RightLegJ5">
+                <Node id="/right_leg/ankle/right_actuator" />
+                <PublicProcURLExtension id="${AnkleRightActuatorPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${AnkleRightActuatorPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${AnkleRightActuatorPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${AnkleRightActuatorPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="RightLegJ6">
+                <Node id="/right_leg/ankle/left_actuator" />
+                <PublicProcURLExtension id="${AnkleLeftActuatorPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${AnkleLeftActuatorPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${AnkleLeftActuatorPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${AnkleLeftActuatorPrivateFPGAFirmware}" />
+            </fw>
+    </xacro:macro>
+</robot>

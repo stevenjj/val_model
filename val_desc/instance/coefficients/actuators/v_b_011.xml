@@ -1,0 +1,21 @@
+<CoeffData>
+    <ClassFile id="b.xml" />
+    <ControllerFile id="b_sv.xml" />
+    <LocationFile id="hip_roll_left.xml" />
+    <SensorsFile id="sensors.xml" />
+    <SafetyFile id="safety.xml" />
+    <Coeffs>
+        <Coeff id="EncMountingDir" value="-1" description="Encoder Mounting Direction" />
+        <Coeff id="EncoderIndexOffset" value="0.5894" description="Electrical angle offset from Index pulse of Encoder" />
+        <Coeff id="JointKinematicDir" value="-1.0" description="Kinematic direction of joint" />
+        <Coeff id="TorqueOffset_Nm" value="30.2799612503" description="" />
+        <Coeff id="PositionOffset_Rad" value="0.38272857666" description="" />
+        <Coeff id="JointSensors_MotorPosition" value="1" description="Incremental Encoder Enabled" />
+        <Coeff id="JointSensors_OutputPosition" value="2.0" description="V1 actuator magnetic aps" />
+        <Coeff id="JointSensors_OutputForce" value="2.0" description="" />
+        <Coeff id="JointSensors_OutputVelocity" value="4.0" description="1: position sensor derivative, 2: inc enc and sprnig def derivative" />
+        <Coeff id="JointOutputAPS_MountingGain" value="1.0" description="" />
+        <Coeff id="SpringAPS_BitOffset" value="55685715" description="" />
+        <Coeff id="SpringAPS_MountingGain" value="-1" description="" />
+    </Coeffs>
+</CoeffData>

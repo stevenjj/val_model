@@ -1,0 +1,6 @@
+<CoeffData>
+  <Coeffs>
+    <Coeff id="JointSafety_LowerLimit_Rad" value="-3"/>
+    <Coeff id="JointSafety_UpperLimit_Rad" value="1"/>
+  </Coeffs>
+</CoeffData>

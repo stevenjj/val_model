@@ -1,0 +1,21 @@
+<CoeffData>
+    <ClassFile id="f.xml" />
+    <ControllerFile id="f_sv.xml" />
+    <LocationFile id="shoulder_yaw.xml" />
+    <SensorsFile id="sensors.xml" />
+    <SafetyFile id="safety.xml" />
+    <Coeffs>
+        <Coeff id="EncMountingDir" value="-1.0" />
+        <Coeff id="EncoderIndexOffset" value="5.97" />
+        <Coeff id="JointKinematicDir" value="1.0" />
+        <Coeff id="JointOutputAPS_MountingGain" value="1.0" />
+        <Coeff id="JointSensors_MotorPosition" value="1.0" />
+        <Coeff id="JointSensors_OutputForce" value="2.0" />
+        <Coeff id="JointSensors_OutputPosition" value="2.0" />
+        <Coeff id="JointSensors_OutputVelocity" value="4.0" />
+        <Coeff id="PositionOffset_Rad" value="-0.470932087712" />
+        <Coeff id="SpringAPS_BitOffset" value="895749000.0" />
+        <Coeff id="SpringAPS_MountingGain" value="-1.0" />
+        <Coeff id="TorqueOffset_Nm" value="-2.05533327719" />
+    </Coeffs>
+</CoeffData>

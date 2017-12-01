@@ -1,0 +1,48 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="forearm_firmware">
+
+    <xacro:include filename="$(find val_description)/common/xacro/firmware/valkyrie_firmware.xacro"/>
+    <xacro:macro name="forearm_firmware"  >
+            <fw id="leftArmJ5">
+                <Node id="/left_arm/j5" />
+                <PublicProcURLExtension id="" />
+                <PrivateProcURLExtension id="" />
+                <PublicFPGAURLExtension id="" />
+                <PrivateFPGAURLExtension id="" />
+            </fw>
+            <fw id="leftArmAthena1">
+                <Node id="/left_arm/athena1" />
+                <PublicProcURLExtension id="" />
+                <PrivateProcURLExtension id="" />
+                <PublicFPGAURLExtension id="" />
+                <PrivateFPGAURLExtension id="" />
+            </fw>
+            <fw id="leftArmAthena2">
+                <Node id="/left_arm/athena2" />
+                <PublicProcURLExtension id="" />
+                <PrivateProcURLExtension id="" />
+                <PublicFPGAURLExtension id="" />
+                <PrivateFPGAURLExtension id="" />
+            </fw>
+            <fw id="rightArmJ5">
+                <Node id="/right_arm/j5" />
+                <PublicProcURLExtension id="" />
+                <PrivateProcURLExtension id="" />
+                <PublicFPGAURLExtension id="" />
+                <PrivateFPGAURLExtension id="" />
+            </fw>
+            <fw id="rightArmAthena1">
+                <Node id="/right_arm/athena1" />
+                <PublicProcURLExtension id="" />
+                <PrivateProcURLExtension id="" />
+                <PublicFPGAURLExtension id="" />
+                <PrivateFPGAURLExtension id="" />
+            </fw>
+            <fw id="rightArmAthena2">
+                <Node id="/right_arm/athena2" />
+                <PublicProcURLExtension id="" />
+                <PrivateProcURLExtension id="" />
+                <PublicFPGAURLExtension id="" />
+                <PrivateFPGAURLExtension id="" />
+            </fw>
+    </xacro:macro>
+</robot>

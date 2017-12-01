@@ -1,0 +1,25 @@
+<launch>
+
+    <arg name="gui" default="False" />
+    <param name="use_gui" value="$(arg gui)"/>
+
+    <!-- Load Robot -->
+    <param name="val_ik_robot" textfile="$(find val_viz)/robot_urdf/valkyrie_sim_gazebo_sync_red.urdf" /> 
+
+    <!-- Load Joint State and Robot State Publishers -->
+    <group if = "$(arg gui)">
+        <node name="joint_state_publisher_ik" pkg="joint_state_publisher" type="joint_state_publisher" >                     
+            <remap from="robot_description" to="val_ik_robot" />
+            <remap from="joint_states" to="val_ik_robot/joint_states" />
+
+        </node>            
+    </group>
+
+    <node name="robot_state_publisher_ik" pkg="robot_state_publisher" type="state_publisher" >
+        <remap from="robot_description" to="val_ik_robot" />
+        <remap from="joint_states" to="val_ik_robot/joint_states" />    
+        <param name="tf_prefix" type="string" value="ik" />                 
+    </node>
+
+    <node name="rviz_ik" pkg="rviz" type="rviz" args="-d $(find val_viz)/launch/val_ik_rviz.rviz" required="true" /> 
+</launch>

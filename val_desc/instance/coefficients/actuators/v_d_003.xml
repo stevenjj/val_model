@@ -1,0 +1,21 @@
+<CoeffData>
+    <ClassFile id="d.xml" />
+    <ControllerFile id="d_sv.xml" />
+    <LocationFile id="knee_pitch.xml" />
+    <SensorsFile id="sensors.xml" />
+    <SafetyFile id="safety.xml" />
+    <Coeffs>
+        <Coeff id="EncMountingDir" value="1.0" />
+        <Coeff id="EncoderIndexOffset" value="2.972" />
+        <Coeff id="JointKinematicDir" value="-1.0" />
+        <Coeff id="JointSensors_MotorPosition" value="1.0" />
+        <Coeff id="JointSensors_OutputForce" value="2.0" />
+        <Coeff id="JointSensors_OutputVelocity" value="4.0" />
+        <Coeff id="JointSensors_OutputPosition" value="2.0" />
+        <Coeff id="PositionOffset_Rad" value="1.32655910371" />
+        <Coeff id="JointOutputAPS_MountingGain" value="-1.0" />
+        <Coeff id="SpringAPS_BitOffset" value="1013874600.0" />
+        <Coeff id="SpringAPS_MountingGain" value="-1.0" />
+        <Coeff id="TorqueOffset_Nm" value="-20.9281868675" />
+    </Coeffs>
+</CoeffData>

@@ -1,0 +1,6 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="actuator_testbench">
+
+	<xacro:property name="instance" value="actuator_testbench" />
+	<xacro:include filename="$(find val_description)/common/xacro/serial_numbers/test_bench_serials.xacro" />
+    <xacro:include filename="$(find val_description)/instance/instances/robots/xacro/common/test_bench_template.xacro"/>
+</robot>

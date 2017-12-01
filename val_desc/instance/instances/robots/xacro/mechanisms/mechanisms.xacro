@@ -1,0 +1,48 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="actuators">
+
+<xacro:macro name="simple_mechanism" params="name serial_number node calibration_angle:=0.0">
+    <Mechanism id="${name}" type="simple">
+        <SerialNumber id="${serial_number}" />
+        <Node id="${node}" />
+        <CalibrationAngle value="${calibration_angle}"/>
+    </Mechanism>
+</xacro:macro>
+
+<xacro:macro name="joint" params="name type node calibration_angle:=0.0">
+	<Joint id="${name}" type="${type}">
+		<CalibrationAngle value="${calibration_angle}"/>
+		<Node id="${node}"/>
+	</Joint>
+</xacro:macro>
+
+<xacro:macro name="actuator" params="name type serial_number node " >
+	<Actuator id="${name}" type="${type}">
+		<SerialNumber id="${serial_number}" />
+		<Node id="${node}" />
+	</Actuator>
+</xacro:macro>
+
+<xacro:macro name="two_active_joint_mechanism" params="mechanism_name actuator0_name actuator1_name actuator0_type actuator1_type joint0_name joint1_name actuator0_serial actuator0_node actuator1_serial actuator1_node joint0_node:=${actuator0_node} joint1_node:=${actuator1_node} joint0_cal_angle:=0.0 joint1_cal_angle:=0.0" >
+	<Mechanism id="${mechanism_name}" type="complex">
+		<xacro:joint name="${joint0_name}" type="active" node="${joint0_node}" calibration_angle="${joint0_cal_angle}"/>
+		<xacro:joint name="${joint1_name}" type="active" node="${joint1_node}" calibration_angle="${joint1_cal_angle}"/>
+		<xacro:actuator name="${actuator0_name}" type="${actuator0_type}" serial_number="${actuator0_serial}" node="${actuator0_node}" />
+		<xacro:actuator name="${actuator1_name}" type="${actuator1_type}" serial_number="${actuator1_serial}" node="${actuator1_node}" />
+	</Mechanism>
+</xacro:macro>
+
+<xacro:macro name="pushrod_mechanism" params="mechanism_name actuator0_name actuator1_name joint0_name joint1_name actuator0_serial actuator0_node actuator1_serial actuator1_node joint0_node:=${actuator0_node} joint1_node:=${actuator1_node} joint0_cal_angle:=0.0 joint1_cal_angle:=0.0" >
+	<xacro:two_active_joint_mechanism  mechanism_name="${mechanism_name}" actuator0_name="${actuator0_name}" actuator1_name="${actuator1_name}" actuator0_type="linear" actuator1_type="linear" joint0_name="${joint0_name}" joint1_name="${joint1_name}" actuator0_serial="${actuator0_serial}" actuator0_node="${actuator0_node}" actuator1_serial="${actuator1_serial}" actuator1_node="${actuator1_node}" joint0_node="${joint0_node}" joint1_node="${joint1_node}" joint0_cal_angle="${joint0_cal_angle}" joint1_cal_angle="${joint1_cal_angle}"/>
+</xacro:macro>
+
+<xacro:macro name="forearm" params="mechanism_name serial_number athena1_node athena2_node">
+    <Mechanism id="${mechanism_name}" type="forearm">
+            <SerialNumber id="${serial_number}"/>
+            <Nodes>
+                <Athena1 id="${athena1_node}"/>
+                <Athena2 id="${athena2_node}"/>
+            </Nodes>
+    </Mechanism>
+</xacro:macro>
+
+</robot>

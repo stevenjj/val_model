@@ -1,0 +1,8 @@
+<CoeffData>    
+  <Coeffs>
+    <Coeff id="ForceControl_MotorForceDirection" value="1.0"/>
+    <Coeff id="Commutation_Select" value="2.0"/>
+    <Coeff id="ForceControl_Current2MotorForce" value="0.0375"/>
+    <Coeff id="ForceControl_SensorFeedback" value="1"/>
+  </Coeffs>
+</CoeffData>

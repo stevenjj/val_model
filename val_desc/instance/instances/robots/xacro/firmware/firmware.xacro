@@ -1,0 +1,16 @@
+<firmware xmlns:xacro="http://ros.org/wiki/xacro" name="firmware">
+
+    <xacro:include filename="$(find val_description)/instance/instances/robots/xacro/firmware/arm_firmware.xacro" />
+    <xacro:include filename="$(find val_description)/instance/instances/robots/xacro/firmware/forearm_firmware.xacro" />
+    <xacro:include filename="$(find val_description)/instance/instances/robots/xacro/firmware/leg_firmware.xacro" />
+    <xacro:include filename="$(find val_description)/instance/instances/robots/xacro/firmware/trunk_firmware.xacro" />
+    <xacro:include filename="$(find val_description)/common/xacro/firmware/valkyrie_firmware.xacro"/>
+    <xacro:macro name="firmware" params="">
+        <Firmware type="firmware">
+            <xacro:arm_firmware />
+            <xacro:forearm_firmware />
+            <xacro:leg_firmware />
+            <xacro:trunk_firmware />
+        </Firmware>
+    </xacro:macro>
+</firmware>

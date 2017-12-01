@@ -1,0 +1,19 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="leg">
+
+    <xacro:include filename="$(find val_description)/instance/instances/robots/xacro/mechanisms/mechanisms.xacro"/>
+    <xacro:include filename="$(find val_description)/common/xacro/joint_names/valkyrie_joint_names.xacro"/>
+
+    <xacro:macro name="leg" params="prefix reflect j1_serial_number j2_serial_number j3_serial_number j4_serial_number ankle_left_actuator_serial ankle_right_actuator_serial" >
+
+    	<xacro:simple_mechanism name="${HipYawJointName}" serial_number="${j1_serial_number}" node="${HipYawNode}" calibration_angle="${HipYawCalibrationAngle}"/>
+
+    	<xacro:simple_mechanism name="${HipRollJointName}" serial_number="${j2_serial_number}" node="${HipRollNode}" calibration_angle="${HipRollCalibrationAngle}"/>
+
+    	<xacro:simple_mechanism name="${HipPitchJointName}" serial_number="${j3_serial_number}" node="${HipPitchNode}" calibration_angle="${HipPitchCalibrationAngle}"/>
+
+    	<xacro:simple_mechanism name="${KneePitchJointName}" serial_number="${j4_serial_number}" node="${KneePitchNode}" calibration_angle="${KneePitchCalibrationAngle}"/>
+
+    	<xacro:pushrod_mechanism mechanism_name="${prefix}Ankle" actuator0_name="${AnkleLeftActuatorName}" actuator1_name="${AnkleRightActuatorName}" joint0_name="${AnklePitchJointName}" joint0_cal_angle="${AnklePitchCalibrationAngle}" joint1_cal_angle="${AnkleRollCalibrationAngle}" joint1_name="${AnkleRollJointName}" actuator0_serial="${ankle_left_actuator_serial}" actuator1_serial="${ankle_right_actuator_serial}" actuator0_node="${AnkleLeftActuatorNode}" actuator1_node="${AnkleRightActuatorNode}" joint0_node="${AnkleRightActuatorNode}" joint1_node="${AnkleLeftActuatorNode}"/>
+    </xacro:macro>
+
+</robot>

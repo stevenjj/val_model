@@ -1,0 +1,22 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="valkyrie">
+
+    <gazebo>
+      <plugin filename="libval_gazebo.so" name="SharedMemorySimInterfacePlugin">
+          <robotNamespace>/val</robotNamespace>
+      </plugin>
+    </gazebo>
+
+    <schedule_topic_creator_file package="val_gazebo" relative_file_path="/configuration/valkyrie_sim_shm_topics.yaml"/>
+
+    <xacro:include filename="$(find val_description)/common/xacro/api/valkyrie_sim_api.xacro"/>
+    <xacro:include filename="$(find val_description)/model/urdf/multisense_sl.urdf" />
+    <xacro:include filename="$(find val_description)/common/xacro/serial_numbers/valkyrie_A_serials.xacro"/>
+    <xacro:include filename="$(find val_description)/common/xacro/dev_ports/valkyrie_gazebo_ports.xacro"/>
+    <xacro:include filename="$(find val_description)/model/robots/common/xacro/gazebo_harness.xacro"/>
+    <xacro:include filename="$(find val_description)/model/robots/common/xacro/gazebo_self_collide.xacro"/>
+    <xacro:include filename="$(find val_description)/model/robots/common/xacro/valkyrie_base_sim.xacro"/>
+
+    <xacro:add_self_collide />
+    <xacro:add_sim_harness harnessed_link="${TorsoRollLinkName}" />    
+
+</robot>

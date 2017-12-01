@@ -1,0 +1,62 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="arm_firmware">
+
+    <xacro:include filename="$(find val_description)/common/xacro/firmware/valkyrie_firmware.xacro"/>
+    <xacro:macro name="arm_firmware"  >
+            <fw id="leftArmJ1">
+                <Node id="/trunk/left_arm_j1" />
+                <PublicProcURLExtension id="${ShoulderPitchPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${ShoulderPitchPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${leftShoulderPitchPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${leftShoulderPitchPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="leftArmJ2">
+                <Node id="/left_arm/j2" />
+                <PublicProcURLExtension id="${ShoulderRollPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${ShoulderRollPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${ShoulderRollPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${ShoulderRollPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="leftArmJ3">
+                <Node id="/left_arm/j3" />
+                <PublicProcURLExtension id="${ShoulderYawPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${ShoulderYawPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${ShoulderYawPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${ShoulderYawPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="leftArmJ4">
+                <Node id="/left_arm/j4" />
+                <PublicProcURLExtension id="${ElbowPitchPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${ElbowPitchPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${ElbowPitchPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${ElbowPitchPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="rightArmJ1">
+                <Node id="/trunk/right_arm_j1" />
+                <PublicProcURLExtension id="${ShoulderPitchPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${ShoulderPitchPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${rightShoulderPitchPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${rightShoulderPitchPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="rightArmJ2">
+                <Node id="/right_arm/j2" />
+                <PublicProcURLExtension id="${ShoulderRollPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${ShoulderRollPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${ShoulderRollPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${ShoulderRollPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="rightArmJ3">
+                <Node id="/right_arm/j3" />
+                <PublicProcURLExtension id="${ShoulderYawPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${ShoulderYawPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${ShoulderYawPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${ShoulderYawPrivateFPGAFirmware}" />
+            </fw>
+            <fw id="rightArmJ4">
+                <Node id="/right_arm/j4" />
+                <PublicProcURLExtension id="${ElbowPitchPublicProcFirmware}" />
+                <PrivateProcURLExtension id="${ElbowPitchPrivateProcFirmware}" />
+                <PublicFPGAURLExtension id="${ElbowPitchPublicFPGAFirmware}" />
+                <PrivateFPGAURLExtension id="${ElbowPitchPrivateFPGAFirmware}" />
+            </fw>
+    </xacro:macro>
+</robot>

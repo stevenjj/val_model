@@ -1,0 +1,1 @@
+ rostopic pub /robot1/joint_states sensor_msgs/JointState '{header: {seq: 0, stamp: {secs: 0, nsecs: 0}, frame_id: ""}, name: ["leftElbowPitch"], position: [-1.0], velocity: [0.0], effort: [0.0]}' --once

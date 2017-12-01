@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="valkyrie_joint_calibration_angles" xmlns:xacro="http://www.ros.org/wiki/xacro">
+	<xacro:property name="TorsoYawCalibrationAngle" value="0.0"/>
+	<xacro:property name="WaistRollCalibrationAngle" value="0.0"/>
+	<xacro:property name="WaistPitchCalibrationAngle" value="0.0"/>
+	<xacro:property name="HipYawCalibrationAngle" value="0.0"/>
+	<xacro:property name="HipRollCalibrationAngle" value="0.0"/>
+	<xacro:property name="HipPitchCalibrationAngle" value="0.0"/>
+	<xacro:property name="KneePitchCalibrationAngle" value="-0.123918"/>
+	<xacro:property name="AnklePitchCalibrationAngle" value="0.0"/>
+	<xacro:property name="AnkleRollCalibrationAngle" value="0.0"/>
+	<xacro:property name="LowerNeckPitchCalibrationAngle" value="0.0"/>
+	<xacro:property name="NeckYawCalibrationAngle" value="1.0472"/>
+	<xacro:property name="UpperNeckPitchCalibrationAngle" value="0.0"/>
+	<xacro:property name="ShoulderPitchCalibrationAngle" value="0.0"/>
+	<xacro:property name="ShoulderRollCalibrationAngle" value="${reflect * -1.309}"/>
+	<xacro:property name="ShoulderYawCalibrationAngle" value="0.0"/>
+	<xacro:property name="ElbowPitchCalibrationAngle" value="0.0"/>
+	<xacro:property name="ForearmYawCalibrationAngle" value="0.0"/>
+	<xacro:property name="WristRollCalibrationAngle" value="0.0"/>
+	<xacro:property name="WristPitchCalibrationAngle" value="0.0"/>
+</robot>
