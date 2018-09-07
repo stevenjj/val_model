@@ -1,0 +1,25 @@
+<launch>
+  <!-- Nice Reference at: http://answers.gazebosim.org/question/9403/multi-robot-controller-manager-for-different-robot_descripion/ -->
+
+    <arg name="gui" default="False" />  
+
+    <group ns="val_robot">
+      <param name="robot_description" textfile="$(find val_description)/model/urdf/valkyrie_A.urdf" />        
+      <param name="use_gui" value="$(arg gui)"/>
+
+      <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+            <rosparam param="source_list">[/ihmc_ros/valkyrie/output/joint_states]</rosparam>
+      </node> 
+      <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher">
+        <param name="tf_prefix" type="string" value="val_robot" />  
+      </node>
+
+    </group>
+
+    <!-- identity transform from the actual robot pelvis to a copy of the visualizer pelvis --> 
+    <node pkg="tf" type="static_transform_publisher" name="real_pelvis_to_visualize_pelvis" 
+     args="0.0  0.0 0.0 0.0 0.0 0.0 1.0 pelvis val_robot/pelvis 200" />
+
+    <node name="rviz_ik" pkg="rviz" type="rviz" args="-d $(find val_viz)/launch/generic_valkyrie_visualizer.rviz" required="true" /> 
+
+</launch>

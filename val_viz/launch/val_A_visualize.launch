@@ -1,0 +1,7 @@
+<launch>
+	<arg name="gui" default="False" />
+    <param name="use_gui" value="$(arg gui)"/>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find val_viz)/launch/val_A_visualize.rviz" required="true" />
+
+</launch>
