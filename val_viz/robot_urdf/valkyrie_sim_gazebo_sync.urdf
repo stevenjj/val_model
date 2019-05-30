@@ -2297,10 +2297,10 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://val_desc/model/meshes/legs/lj2_right.dae"/>
+        <mesh filename="package://val_desc/model/meshes/legs/lj2_left.dae"/>
       </geometry>
       <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </visual>
+    </visual>    
   </link>
   <link name="leftHipPitchLink">
     <inertial>
