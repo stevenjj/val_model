@@ -6,8 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /RobotModel1
-        - /RobotModel2
       Splitter Ratio: 0.5
     Tree Height: 869
   - Class: rviz/Selection
@@ -64,6 +62,404 @@ Visualization Manager:
         {}
       Update Interval: 0
       Value: false
+    - Alpha: 0.125
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        center_bottom_led_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        center_top_led_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_hokuyo_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        head_imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        hokuyo_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftAnklePitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftCOP_Frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        leftElbowPitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftFoot:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftFootSixAxis_Frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        leftForearmLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftHazardCamera_Frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        leftHipPitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftHipRollLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftHipYawLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftIndexFingerPitch1Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftIndexFingerPitch2Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftIndexFingerPitch3Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftKneePitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftMiddleFingerPitch1Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftMiddleFingerPitch2Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftMiddleFingerPitch3Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftPalm:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftPinkyPitch1Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftPinkyPitch2Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftPinkyPitch3Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftShoulderPitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftShoulderRollLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftShoulderYawLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftThumbPitch1Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftThumbPitch2Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftThumbPitch3Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftThumbRollLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leftTorsoImu_Frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        leftWristRollLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_camera_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_camera_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_led_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        lowerNeckPitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        neckYawLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pelvis:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pelvisMiddleImu_Frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pelvisRearImu_Frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rightAnklePitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightCOP_Frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rightElbowPitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightFoot:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightFootSixAxis_Frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rightForearmLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightHazardCamera_Frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rightHipPitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightHipRollLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightHipYawLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightIndexFingerPitch1Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightIndexFingerPitch2Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightIndexFingerPitch3Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightKneePitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightMiddleFingerPitch1Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightMiddleFingerPitch2Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightMiddleFingerPitch3Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightPalm:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightPinkyPitch1Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightPinkyPitch2Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightPinkyPitch3Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightShoulderPitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightShoulderRollLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightShoulderYawLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightThumbPitch1Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightThumbPitch2Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightThumbPitch3Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightThumbRollLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rightWristRollLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_camera_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_camera_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_led_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        torso:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        torsoPitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        torsoYawLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        upperNeckPitchLink:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: Starting Pose
+      Robot Description: val_robot/robot_description
+      TF Prefix: val_robot
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
     - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
@@ -456,407 +852,9 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-      Name: RobotModel
+      Name: IK Solution
       Robot Description: val_ik_robot/robot_description
       TF Prefix: val_ik_robot
-      Update Interval: 0
-      Value: true
-      Visual Enabled: true
-    - Alpha: 0.5
-      Class: rviz/RobotModel
-      Collision Enabled: false
-      Enabled: true
-      Links:
-        All Links Enabled: true
-        Expand Joint Details: false
-        Expand Link Details: false
-        Expand Tree: false
-        Link Tree Style: Links in Alphabetic Order
-        center_bottom_led_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        center_top_led_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        head:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        head_hokuyo_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        head_imu_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        hokuyo_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftAnklePitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftCOP_Frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        leftElbowPitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftFoot:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftFootSixAxis_Frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        leftForearmLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftHazardCamera_Frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        leftHipPitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftHipRollLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftHipYawLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftIndexFingerPitch1Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftIndexFingerPitch2Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftIndexFingerPitch3Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftKneePitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftMiddleFingerPitch1Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftMiddleFingerPitch2Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftMiddleFingerPitch3Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftPalm:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftPinkyPitch1Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftPinkyPitch2Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftPinkyPitch3Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftShoulderPitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftShoulderRollLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftShoulderYawLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftThumbPitch1Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftThumbPitch2Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftThumbPitch3Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftThumbRollLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leftTorsoImu_Frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        leftWristRollLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_camera_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_camera_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_led_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        lowerNeckPitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        neckYawLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pelvis:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pelvisMiddleImu_Frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        pelvisRearImu_Frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rightAnklePitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightCOP_Frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rightElbowPitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightFoot:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightFootSixAxis_Frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rightForearmLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightHazardCamera_Frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rightHipPitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightHipRollLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightHipYawLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightIndexFingerPitch1Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightIndexFingerPitch2Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightIndexFingerPitch3Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightKneePitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightMiddleFingerPitch1Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightMiddleFingerPitch2Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightMiddleFingerPitch3Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightPalm:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightPinkyPitch1Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightPinkyPitch2Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightPinkyPitch3Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightShoulderPitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightShoulderRollLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightShoulderYawLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightThumbPitch1Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightThumbPitch2Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightThumbPitch3Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightThumbRollLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rightWristRollLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_camera_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        right_camera_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        right_led_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        torso:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        torsoPitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        torsoYawLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        upperNeckPitchLink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-      Name: RobotModel
-      Robot Description: val_robot/robot_description
-      TF Prefix: val_robot
       Update Interval: 0
       Value: true
       Visual Enabled: true
@@ -885,25 +883,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.6028285
+      Distance: 3.92403078
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.203971431
-        Y: 0.0133234076
-        Z: 0.40811038
+        X: -0.302364111
+        Y: 0.00633578654
+        Z: 0.600212455
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.280202866
+      Pitch: 0.410202712
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.547207057
+      Yaw: 0.392209619
     Saved: ~
 Window Geometry:
   Displays:
