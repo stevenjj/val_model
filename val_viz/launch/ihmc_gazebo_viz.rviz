@@ -27,6 +27,8 @@ Panels:
     Name: Time
     SyncMode: 0
     SyncSource: ""
+Toolbars:
+  toolButtonStyle: 2
 Visualization Manager:
   Class: ""
   Displays:
@@ -450,7 +452,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: world
+    Fixed Frame: pelvis
     Frame Rate: 30
   Name: root
   Tools:
@@ -486,10 +488,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.440398395
+      Pitch: 0.190398321
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.20858335
+      Yaw: 6.2435813
     Saved: ~
 Window Geometry:
   Displays:
